@@ -1,1 +1,1 @@
-# NeuralCore
+# Neural
