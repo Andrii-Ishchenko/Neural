@@ -8,17 +8,17 @@ namespace Neural.Core
 {
     public class NeuralLink
     {
-        public NeuralLink(Neuron start, Neuron end, double weight)
+        public NeuralLink(Neuron linkedTo, double weight)
         {
-
+            LinkedNeuron = linkedTo;
+            Weigth = weight;
         }
 
-        protected Neuron StartNeuron { get; set; }
-        protected Neuron EndNeuron { get; set; }
+        public Neuron LinkedNeuron { get; set; }
 
         public double Weigth { get; set; }
         public double Signal { get; set; }
     }
 
-    
+   
 }
